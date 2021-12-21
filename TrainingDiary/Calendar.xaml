@@ -1,0 +1,35 @@
+﻿<Window x:Class="Training.Calendar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:language ="clr-namespace:Training.Langs"
+        Title="Calendar" Height="768" Width="1366">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/1.jpg"/>
+        </Grid.Background>
+        <Button x:Name="Back_Ground3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="183" Width="179" BorderBrush="#FFE80405" Margin="10,10,0,0" Click="Back_Ground3_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/3.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Calendar1" HorizontalAlignment="Left" Content="{x:Static language:Lang.cal_lan}" Height="164.121" VerticalAlignment="Top" Width="390.724" FontSize="96" FontFamily="SIEMENS_GOST Type A" Margin="514.61,28.879,0,0" Background="#FFE70304" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" >
+        </Label>
+        <Viewbox Stretch="Fill" StretchDirection="UpOnly" Margin="39,233,807,40">
+            <Calendar Name="cldSample" SelectionMode="MultipleRange" Height="161" Width="178" FontFamily="SIEMENS_GOST Type A" FontSize="20" Background="#FFE70304">
+                <Calendar.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FF385061" Offset="1"/>
+                    </LinearGradientBrush>
+                </Calendar.BorderBrush>
+            </Calendar>
+        </Viewbox>
+        <TextBox x:Name="TextBox_Calendar" HorizontalAlignment="Left" Height="314" Margin="822,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="503" Background="White" AcceptsReturn="True"/>
+        <Button x:Name="Clear" Content="{x:Static language:Lang.dt_cm_lan4}" HorizontalAlignment="Left" Margin="1185,587,0,0" VerticalAlignment="Top" Width="140" Height="44" FontFamily="SIEMENS_GOST Type A" Background="#FFE70304" BorderBrush="#FFE70304" Click="Clear_Click" FontSize="20"/>
+        <Button x:Name="Create" Content="{x:Static language:Lang.dt_cm_lan1}" HorizontalAlignment="Left" Margin="822,587,0,0" VerticalAlignment="Top" Width="140" Height="44" FontFamily="SIEMENS_GOST Type A" Background="#FFE70304" BorderBrush="#FFE70304" Click="Create_Click" Foreground="Black" FontSize="20"/>
+        <Button x:Name="Output" Content="{x:Static language:Lang.dt_cm_lan2}" HorizontalAlignment="Left" Margin="1008,587,0,0" VerticalAlignment="Top" Width="140" Height="44" FontFamily="SIEMENS_GOST Type A" Background="#FFE70304" BorderBrush="#FFE70304" Click="Output_Click" Foreground="Black" FontSize="20"/>
+        <Button x:Name="Delete" Content="{x:Static language:Lang.dt_cm_lan3}" HorizontalAlignment="Left" Margin="1008,653,0,0" VerticalAlignment="Top" Width="140" Height="44" FontFamily="SIEMENS_GOST Type A" Background="#FFE70304" BorderBrush="#FFE70304" Click="Delete_Click" Foreground="Black" FontSize="20"/>
+    </Grid>
+</Window>

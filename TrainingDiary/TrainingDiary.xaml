@@ -1,0 +1,39 @@
+﻿<Window x:Class="Training.TrainingDiary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:language ="clr-namespace:Training.Langs"
+        Title="TrainingDiary" Height="768" Width="1366">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="81*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="259*"/>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="329*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/1.jpg"/>
+        </Grid.Background>
+        <Button x:Name="Verx" Content="{x:Static language:Lang.upbody_lan}" HorizontalAlignment="Left" Height="85" FontSize="64" FontFamily="SIEMENS_GOST Type A" Background="#FFC0090A" VerticalAlignment="Top" Width="441" Margin="55,210,0,0" Click="Verx_Click" Grid.RowSpan="3"/>
+        <Button x:Name="Niz" Content="{x:Static language:Lang.lowbody_lan}" HorizontalAlignment="Left" Height="85" FontSize="64" FontFamily="SIEMENS_GOST Type A" Background="#FFC0090A" VerticalAlignment="Top" Width="441" Margin="55,64,0,0" Click="Niz_Click" Grid.Row="2"/>
+        <Button x:Name="Ryki" Content="{x:Static language:Lang.arm_lan}" HorizontalAlignment="Left" Height="85" FontSize="64" FontFamily="SIEMENS_GOST Type A" Background="#FFC0090A" VerticalAlignment="Top" Width="441" Margin="55,170,0,0" Click="Ryki_Click" Grid.Row="2"/>
+        <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="174" Width="1356" FontFamily="SIEMENS_GOST Type A" FontSize="96" TextAlignment="Center" Text="" Grid.ColumnSpan="3"/>
+        <Button x:Name="Back_Ground1" Content="" HorizontalAlignment="Left" Height="195" Margin="10,10,0,0" VerticalAlignment="Top" Width="203" BorderBrush="#FFE70304" Foreground="#FFE70304" Click="Back_Ground1_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/3.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="TrainingDiary_name" Content="{x:Static language:Lang.dt_lan}" HorizontalAlignment="Left" Height="165"  VerticalAlignment="Top" Width="772" FontSize="96" FontFamily="SIEMENS_GOST Type A" Margin="325,19,0,0" Background="#FFE70304" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="RecordigText" HorizontalAlignment="Left" Height="517" Margin="54.6,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="585" Grid.Column="2" Grid.RowSpan="3" AcceptsReturn="True"/>
+        <ComboBox x:Name="Vib" Margin="517,210,0.4,1.8" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
+            <ComboBoxItem Content="{x:Static language:Lang.dt_cm_lan1}"   Width="168" Margin="26,0" Height="24"/>
+            <ComboBoxItem Content="{x:Static language:Lang.dt_cm_lan2}"  Width="168" Margin="26,0" Height="24"/>
+            <ComboBoxItem Content="{x:Static language:Lang.dt_cm_lan3}"  Width="168" Margin="26,0" Height="24"/>
+            <ComboBoxItem Content="{x:Static language:Lang.dt_cm_lan4}" Selected="Clean_SelectionChanged"  Width="168" Margin="26,0" Height="24">
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
