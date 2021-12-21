@@ -1,0 +1,11 @@
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib_MarkupCompile.cache
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib_MarkupCompile.lref
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\bin\Debug\Lib.dll
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\bin\Debug\Lib.pdb
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Themes\Generic.baml
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib.g.resources
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib.Properties.Resources.resources
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib.csproj.GenerateResource.Cache
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib.dll
+C:\Users\miha2\OneDrive\Документы\GitHub\Lib\obj\Debug\Lib.pdb
